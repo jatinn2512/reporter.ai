@@ -1,6 +1,6 @@
 {
     "css.lint.unknownAtRules": "ignore",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,

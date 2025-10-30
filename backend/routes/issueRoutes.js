@@ -1,5 +1,5 @@
 import express from "express";
-import Issue from "../models/Issue.js";  // ✅ extension .js zaruri hai
+import Issue from "../models/Issue.js";  
 import multer from "multer";             // ✅ added for image upload
 
 const router = express.Router();
