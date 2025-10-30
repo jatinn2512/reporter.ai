@@ -2,13 +2,13 @@ import mongoose from "mongoose";
 
 const issueSchema = new mongoose.Schema(
   {
-    title: { type: String, required: true },          // issue ka naam
-    location: { type: String, required: true },       // kahan par problem hai
+    title: { type: String, required: true },          // issue name
+    location: { type: String, required: true },       // problem's location
     typeOfIssue: { type: String, required: true },    // water, electricity, road...
     description: { type: String },                    // details of issue
     image: { type: String },                          // image ka URL (string path)
     status: { type: String, default: "pending" },     // pending/resolved
-    reportedBy: { type: String, required: true }      // user ka email
+    reportedBy: { type: String, required: true }      // user's email
   },
   { timestamps: true }
 );

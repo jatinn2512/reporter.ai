@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
 
-    // ✅ New fields for daily limit
+    //  New fields for daily limit
     reportsToday: { type: Number, default: 0 },
     lastReportDate: { type: Date, default: null },
   },

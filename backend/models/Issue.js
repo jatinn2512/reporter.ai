@@ -13,7 +13,6 @@ const issueSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// ✅ Check if already compiled
 const Issue = mongoose.models.Issue || mongoose.model("Issue", issueSchema);
 
 export default Issue;

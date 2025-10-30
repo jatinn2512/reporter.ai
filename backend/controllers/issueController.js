@@ -2,7 +2,6 @@ import fetch from "node-fetch";
 import Issue from "../models/Issue.js";
 import User from "../models/User.js";
 
-// ⚠️ Node 18+ me fetch built-in hai. Agar Node <18 hai to node-fetch import karna hoga.
 export const createIssue = async (req, res) => {
   try {
     const { title, description, location, typeOfIssue, image, reportedBy } = req.body;
