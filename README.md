@@ -1,4 +1,5 @@
-# 🌍 AI-Powered Local Issue Reporter  
+# 🌍 Reporter.ai
+### An AI-powered-local-issue-reporter  
 
 An intelligent platform that empowers citizens to **report local civic issues** (potholes, electricity, sanitation, etc.) and allows authorities to manage, track, and resolve them efficiently. Built with a **modern full-stack architecture** and enhanced with **AI-powered features** for automatic issue detection and descriptions.  
 
@@ -34,7 +35,7 @@ An intelligent platform that empowers citizens to **report local civic issues** 
 
 ## 📂 Project Structure  
 ```bash
-AI-Powered-Local-Issue-Reporter/
+Reporter.ai/
 ├── backend/                  # Backend (Node.js + Express)
 │   ├── config/               # DB and server configurations
 │   ├── controllers/          # Controller logic for routes
@@ -74,7 +75,7 @@ AI-Powered-Local-Issue-Reporter/
 ## 🚀 Getting Started  
 ### 1️⃣ Clone the Repo  
 ```bash
-git clone https://github.com/jatinn2512/local-issue-reporter.git
+git clone https://github.com/jatinn2512/reporter.ai.git
 cd local-issue-reporter
 ```
 
