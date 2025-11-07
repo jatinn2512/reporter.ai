@@ -120,4 +120,4 @@ This project is licensed under the **MIT License**.
 ---
 
 ## 🌟 Show your support  
-If you liked this project, give it a ⭐ on [GitHub](https://github.com/jatinn2512/local-issue-reporter)  
+If you liked this project, give it a ⭐ on [GitHub](https://github.com/jatinn2512/reporter.ai)  
