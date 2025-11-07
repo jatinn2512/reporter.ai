@@ -158,7 +158,7 @@ function Navbar({ onLoginClick }) {
             tracking-wide drop-shadow-md select-none"
           onClick={() => navigate("/")}
         >
-          AI Local Issue Reporter
+          Reporter.AI
         </h1>
 
         {/* Desktop Menu */}

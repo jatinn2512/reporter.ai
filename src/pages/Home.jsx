@@ -14,7 +14,9 @@ function Home() {
 
   const advantages = [
     {
-      heading: isHindi ? "तेज़ और स्मार्ट रिपोर्टिंग" : "Fast & Smart Reporting",
+      heading: isHindi
+        ? "तेज़ और स्मार्ट रिपोर्टिंग"
+        : "Fast & Smart Reporting",
       desc: isHindi
         ? "AI जल्दी से स्थानीय समस्याओं को पहचानता और वर्गीकृत करता है।"
         : "AI quickly identifies and categorizes local issues for faster, accurate reporting.",
@@ -70,7 +72,13 @@ function Home() {
             initial={{ x: -60, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.9, ease: "easeOut", type: "spring", stiffness: 70, damping: 14 }}
+            transition={{
+              duration: 0.9,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 70,
+              damping: 14,
+            }}
             className="flex-1 flex justify-center md:justify-start"
           >
             <img
@@ -84,19 +92,34 @@ function Home() {
             initial={{ x: 60, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.9, ease: "easeOut", type: "spring", stiffness: 70, damping: 14 }}
+            transition={{
+              duration: 0.9,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 70,
+              damping: 14,
+            }}
             className="flex-1 text-center md:text-left"
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-snug bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            {/* Updated heading + stylish subheading */}
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-3 leading-snug bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               {isHindi
-                ? "AI-सक्षम स्थानीय समस्या रिपोर्टर में आपका स्वागत है"
-                : "Welcome to AI-Powered Local Issue Reporter"}
+                ? "Reporter.AI में आपका स्वागत है"
+                : "Welcome to Reporter.AI"}
             </h1>
+
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent italic">
+              {isHindi
+                ? "AI-सक्षम स्थानीय समस्या रिपोर्टर"
+                : "An AI-Powered Local Issue Reporter"}
+            </h2>
+
             <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
               {isHindi
                 ? "तेज़, आसान और प्रभावी तरीका अपनी स्थानीय समस्याओं को दर्ज करने का। सड़क, पानी, बिजली या अन्य नागरिक समस्याएं — सब कुछ कुछ ही क्लिक में रिपोर्ट करें।"
                 : "A fast, easy and effective way to report your local issues. From roads, water, electricity to any civic problem — report it in just a few clicks."}
             </p>
+
             <button
               onClick={handleReportClick}
               className={`px-10 py-4 rounded-xl text-lg font-semibold shadow-lg transition-transform transform hover:scale-105 ${
@@ -111,7 +134,10 @@ function Home() {
         </div>
       </div>
 
-      <section id="about-section" className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20 px-6 text-center">
+      <section
+        id="about-section"
+        className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20 px-6 text-center"
+      >
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent drop-shadow-sm">
           {isHindi ? "हमारे बारे में" : "About Us"}
         </h2>
@@ -124,7 +150,7 @@ function Home() {
 
       <div className="max-w-6xl mx-auto px-6 py-20">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-          {isHindi ? "क्यों चुनें AI-पावर्ड समस्या रिपोर्टर?" : "Why Choose AI-Powered Local Issue Reporter?"}
+          {isHindi ? "क्यों चुनें Reporter.AI?" : "Why Choose Reporter.AI?"}
         </h2>
 
         <motion.div
@@ -134,7 +160,9 @@ function Home() {
           viewport={{ once: true, amount: 0.2 }}
           variants={{
             hidden: {},
-            visible: { transition: { staggerChildren: 0.15, delayChildren: 0.1 } }
+            visible: {
+              transition: { staggerChildren: 0.15, delayChildren: 0.1 },
+            },
           }}
         >
           {advantages.map((adv, i) => {
@@ -144,14 +172,30 @@ function Home() {
                 key={i}
                 variants={{
                   hidden: { opacity: 0, x: fromX, y: 40 },
-                  visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.9, ease: "easeOut" } },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                    y: 0,
+                    transition: { duration: 0.9, ease: "easeOut" },
+                  },
                 }}
-                whileHover={{ scale: 1.05, transition: { duration: 0.25, ease: "easeOut" } }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.25, ease: "easeOut" },
+                }}
                 className="bg-white rounded-2xl shadow-lg p-10 flex flex-col items-center text-center hover:shadow-2xl"
               >
-                <img src={adv.img} alt={adv.heading} className="w-24 h-24 mb-6" />
-                <h3 className="font-bold text-2xl mb-4 text-gray-900">{adv.heading}</h3>
-                <p className="text-gray-600 text-base leading-relaxed">{adv.desc}</p>
+                <img
+                  src={adv.img}
+                  alt={adv.heading}
+                  className="w-24 h-24 mb-6"
+                />
+                <h3 className="font-bold text-2xl mb-4 text-gray-900">
+                  {adv.heading}
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  {adv.desc}
+                </p>
               </motion.div>
             );
           })}
@@ -159,7 +203,9 @@ function Home() {
       </div>
 
       <footer className="bg-gray-100 text-center py-8 mt-12">
-        <p className="text-gray-500 text-sm">© 2025 | No Copyright | Made with ❤️ by LOOP - X Team</p>
+        <p className="text-gray-500 text-sm">
+          © 2025 | No Copyright | Made with ❤️ by LOOP - X Team
+        </p>
       </footer>
 
       <LoginModal isOpen={showLogin} onClose={() => setShowLogin(false)} />
