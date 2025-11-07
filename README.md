@@ -76,7 +76,7 @@ Reporter.ai/
 ### 1️⃣ Clone the Repo  
 ```bash
 git clone https://github.com/jatinn2512/reporter.ai.git
-cd local-issue-reporter
+cd reporter.ai
 ```
 
 ### 2️⃣ Backend Setup  
