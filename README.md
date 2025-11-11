@@ -83,14 +83,14 @@ cd reporter.ai
 ```bash
 cd backend
 npm install
-npm start
+npm run dev
 ```
 
 ### 3️⃣ Frontend Setup  
 ```bash
 cd frontend
 npm install
-npm run dev
+npm start
 ```
 
 ---
