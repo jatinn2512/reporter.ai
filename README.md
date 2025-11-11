@@ -94,6 +94,11 @@ npm start
 ```
 
 ---
+### 👨‍💻 Authority Side
+Authority side panel 
+```bash 
+http://localhost:7000/authority/reports
+```
 
 <!-- ## 📸 Screenshots  
 
