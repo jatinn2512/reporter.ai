@@ -204,7 +204,7 @@ function Home() {
 
       <footer className="bg-gray-100 text-center py-8 mt-12">
         <p className="text-gray-500 text-sm">
-          © 2025 | No Copyright | Made with ❤️ by LOOP - X Team
+          © 2025 | No Copyright | Made with ❤️ by Jatin Kumar
         </p>
       </footer>
 

@@ -329,7 +329,7 @@ function ReportIssue() {
       )}
 
       <footer className="bg-gray-100 text-center py-6 mt-10 w-full text-gray-500 text-sm border-t border-gray-200">
-        © 2025 | Made with ❤️ by LOOP - X Team
+        © 2025 | Made with ❤️ by Jatin Kumar
       </footer>
     </div>
   );
